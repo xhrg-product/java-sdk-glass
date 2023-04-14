@@ -1,6 +1,13 @@
 # java-sdk-glass
 
-Importance and priority
-* spring-mvc
-* log4j
-* mybatis-plus
+对系统的可观测行，一般包括了，统计指标，日志，全链路，这三个点都是可以用简单的方案去做。
+
+* 监控指标。直接输出数据到prometheus，可以附加告警。
+* 日志，日志需要有日志规范，日志标准。
+* 全链路，全链路查询，如果是简易的场景，只需要生成一个全链路id打印到日志。其他日志查询工具就可以查询。
+
+#### 依赖
+
+* prometheus
+* log4j2
+
